@@ -18,11 +18,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php $viewport_content = apply_filters( 'hello_elementor_viewport_content', 'width=device-width, initial-scale=1' ); ?>
 	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body <?php body_class(); ?>>
 
-<?php hello_elementor_body_open(); ?>
+<?php //hello_elementor_body_open(); ?>
 
 <a class="skip-link screen-reader-text" href="#content">
 	<?php esc_html_e( 'Skip to content', 'hello-elementor' ); ?></a>
